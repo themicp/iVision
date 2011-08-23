@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+aero_arrow.cur
+aero_helpsel.cur
+aero_working.ani
+aero_busy.ani
+aero_select.cur
+aero_unavail.cur
+aero_ns.cur
+aero_ew.cur
+aero_nwse.cur
+aero_nesw.cur
+aero_move.cur
+aero_link.cur
+aero_prec.cur
+aero_pen.cur
+aero_alt.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\Aero Cursors Black"
+SCHEME_NAME   = "Aero Cursors Black (Alphablended)"
+pointer       = "aero_arrow.cur"
+help          = "aero_helpsel.cur"
+work          = "aero_working.ani"
+busy          = "aero_busy.ani"
+text          = "aero_select.cur"
+unavailiable  = "aero_unavail.cur"
+vert          = "aero_ns.cur"
+horz          = "aero_ew.cur"
+dgn1          = "aero_nwse.cur"
+dgn2          = "aero_nesw.cur"
+move          = "aero_move.cur"
+link          = "aero_link.cur"
+cross         = "aero_prec.cur"
+hand          = "aero_pen.cur"
+alternate     = "aero_alt.cur"

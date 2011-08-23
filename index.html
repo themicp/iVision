@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>iVision</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/ico" href="favicon.ico">
+	</head>
+	<body onclick="whichElement(event)" onload="startTime()" oncontextmenu="return false;">
+		<img src="backgrounds/bg.jpg" id="background-image" alt="background" />
+		<div id="taskbar">
+			<div id="start_button" onclick="showStartMenu()">
+				<img src="images/start.gif" id="start_button_img" onclick="showStartMenu()" alt="start" />
+			</div>
+            <div id="start_menu" >
+                <div id="start_list">
+                </div>
+                <div id="shortcuts">
+                    <span class="shortcut_link" onclick="showWindow('Documents')">Documents</span>
+                    <span class="shortcut_link" onclick="showWindow('Music')">Music</span>
+                    <span class="shortcut_link" onclick="showWindow('Images')">Images</span>
+                    <span class="shortcut_link" onclick="showWindow('Videos')">Videos</span>
+                    <span class="shortcut_link" onclick="showWindow('Games')">Games</span>
+                    <span class="shortcut_link" onclick="showWindow('Computer')">Computer</span>
+                    <span class="shortcut_link" onclick="showWindow('Control Panel')">Control Panel</span>
+                </div>
+                <div id="turn_off">
+                    <span id="shutdown" onclick="alert( 'test' )" >Shut down</span>
+                </div>
+            </div>
+            <div id="tasks">
+            </div>
+			<div id="date_info">
+				<div id="time"></div>
+				<div id="day"></div>
+			</div>
+		</div>
+        <script src="js/taskbar.js"></script>
+        <script src="js/window.js"></script>
+	</body>
+</html>
